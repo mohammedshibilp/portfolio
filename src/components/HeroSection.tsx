@@ -233,7 +233,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResumeModal }) =
                 {/* Passport Size Portrait Image */}
                 <div className="relative rounded-2xl overflow-hidden border border-white/15 aspect-[4/5] bg-slate-950">
                   <img
-                    src="/assets/shibil-passport.jpg"
+                    src={`${import.meta.env.BASE_URL}assets/shibil-passport.jpg`}
                     alt="Mohammed Shibil P - Passport Photo"
                     className="w-full h-full object-cover object-top filter brightness-105 contrast-105"
                   />

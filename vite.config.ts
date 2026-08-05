@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
-  // Use relative base path for GitHub Pages compatibility
-  base: './',
+  // Base path for GitHub Pages repository deployment
+  base: '/portfolio/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -18,6 +18,15 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    chunkSizeWarningLimit: 1600,
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'framer-motion'],
+          three: ['three'],
+          icons: ['lucide-react', 'react-icons'],
+        },
+      },
+    },
   },
 });

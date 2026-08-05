@@ -1,0 +1,17 @@
+{
+  "name": "Mohammed Shibil P Portfolio",
+  "short_name": "Shibil DevOps",
+  "description": "DevOps Engineer Intern & Full Stack Developer Portfolio",
+  "start_url": "/portfolio/",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#38BDF8",
+  "icons": [
+    {
+      "src": "/portfolio/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

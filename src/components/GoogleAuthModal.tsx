@@ -122,7 +122,7 @@ export const GoogleAuthModal: React.FC<GoogleAuthModalProps> = ({
                 <div className="flex items-center gap-3.5">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-accent-blue to-accent-purple p-[1px]">
                     <img
-                      src="/assets/shibil-passport.jpg"
+                      src={`${import.meta.env.BASE_URL}assets/shibil-passport.jpg`}
                       alt={PERSONAL_INFO.name}
                       className="w-full h-full rounded-full object-cover bg-slate-950"
                     />
